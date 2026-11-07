@@ -12,7 +12,7 @@ The project does not contain actual GE LM2500 operational data and is not an app
 
 The original Google Colab notebook is included in this repository:
 
-[LM2500 Marine Gas Turbine Analytics Notebook](LM2500_Marine_Gas_Turbine_Analytics%20copy.ipynb)
+[LM2500 Marine Gas Turbine Analytics Notebook](LM2500_Marine_Gas_Turbine_Analytics.ipynb)
 
 The notebook contains the original analysis workflow. Independent clean-runtime execution remains to be verified.
 
