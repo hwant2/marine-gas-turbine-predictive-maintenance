@@ -226,12 +226,17 @@ Commercial Modular Aero-Propulsion System Simulation
 
 The original analysis notebook, dependency manifest, engineering dashboards, SQL scripts, executive report, and engineering recommendations are included in this repository.
 
+- [Validated Engineering Only Notebook](LM2500_Marine_Gas_Turbine_Engineering_Only.ipynb) — primary analysis notebook
+- [Original Development Notebook](LM2500_Marine_Gas_Turbine_Analytics.ipynb) — retained for historical reference
 - [Original Google Colab Notebook](LM2500_Marine_Gas_Turbine_Analytics.ipynb)
 - [Reproducibility Guide](REPRODUCIBILITY.md)
 - [Python Dependencies](requirements.txt)
 - [SQL Validation Report](sql_validation_report.md)
 
-The SQL validation report documents passing database integrity and consistency checks. Independent execution of the full notebook in a fresh environment remains to be verified.
+The SQL validation report documents passing database integrity and consistency checks.
 
-**Publication status:** Portfolio artifacts and source notebook are available. Final reproducibility verification is pending.
+The Engineering Only notebook was successfully executed in a fresh Google Colab runtime during project validation. Its 50 executable code cells were verified in the saved notebook, and the final portfolio ZIP passed integrity testing.
 
+These checks do not constitute independent reproduction on another machine or validation using actual GE LM2500 operational data.
+
+**Publication status:** Portfolio artifacts and the validated engineering notebook are available. Independent reproduction, dependency version pinning, and operational validation remain future work.
