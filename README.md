@@ -228,7 +228,6 @@ The original analysis notebook, dependency manifest, engineering dashboards, SQL
 
 - [Validated Engineering Only Notebook](LM2500_Marine_Gas_Turbine_Engineering_Only.ipynb) — primary analysis notebook
 - [Original Development Notebook](LM2500_Marine_Gas_Turbine_Analytics.ipynb) — retained for historical reference
-- [Original Google Colab Notebook](LM2500_Marine_Gas_Turbine_Analytics.ipynb)
 - [Reproducibility Guide](REPRODUCIBILITY.md)
 - [Python Dependencies](requirements.txt)
 - [SQL Validation Report](sql_validation_report.md)
