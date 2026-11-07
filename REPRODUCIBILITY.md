@@ -10,8 +10,6 @@ The project does not contain actual GE LM2500 operational data and is not an app
 
 ## Source Code
 
-## Source Code
-
 The primary validated notebook is:
 
 [LM2500 Marine Gas Turbine Engineering Only](LM2500_Marine_Gas_Turbine_Engineering_Only.ipynb)
@@ -65,7 +63,7 @@ pip install -r requirements.txt
 
 ## Google Colab Execution Instructions
 
-1. Open the original notebook in Google Colab.
+1. Open the validated Engineering Only notebook.
 2. Start a fresh runtime.
 3. Install the dependencies.
 4. Upload or mount the NASA C-MAPSS FD001 dataset.
@@ -117,7 +115,7 @@ The twin-engine prediction examples were generated in-sample and must not be rep
 - [x] SQL analysis scripts included
 - [x] Engineering dashboards included
 - [x] Executive report included
-- [ ] Fresh-runtime notebook execution verified
+- [x] Fresh-runtime notebook execution verified
 - [ ] Input file paths independently validated
 - [ ] Published model metrics independently reproduced
 - [ ] Exact dependency versions and random seeds recorded
