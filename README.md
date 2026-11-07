@@ -222,8 +222,16 @@ NASA Prognostics Center of Excellence:
 Commercial Modular Aero-Propulsion System Simulation
 (C-MAPSS), FD001 dataset.
 
-## Publication Status
+## Reproducibility and Publication Status
 
-Portfolio documentation prepared. Reproducibility,
-repository structure, and final publication checks
-remain to be completed.
+The original analysis notebook, dependency manifest, engineering dashboards, SQL scripts, executive report, and engineering recommendations are included in this repository.
+
+- [Original Google Colab Notebook](LM2500_Marine_Gas_Turbine_Analytics%20copy.ipynb)
+- [Reproducibility Guide](REPRODUCIBILITY.md)
+- [Python Dependencies](requirements.txt)
+- [SQL Validation Report](sql_validation_report.md)
+
+The SQL validation report documents passing database integrity and consistency checks. Independent execution of the full notebook in a fresh environment remains to be verified.
+
+**Publication status:** Portfolio artifacts and source notebook are available. Final reproducibility verification is pending.
+
