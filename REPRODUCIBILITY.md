@@ -1,32 +1,48 @@
 # Reproducibility Guide
 
-## Project
+## Project Overview
 
-Gas Turbine Performance and Predictive
-Maintenance Analytics
+Gas Turbine Performance and Predictive Maintenance Analytics
 
-## Data Source
+This project uses NASA C-MAPSS FD001 simulated aircraft turbofan data as an educational proxy for marine gas turbine condition monitoring and predictive maintenance.
 
-NASA C-MAPSS FD001 simulated aircraft
-turbofan engine dataset.
+The project does not contain actual GE LM2500 operational data and is not an approved maintenance or diagnostic system.
 
-This dataset is used as an educational proxy
-for marine gas turbine analytics.
+## Source Code
 
-It is not actual LM2500 operating data.
+The original Google Colab notebook is included in this repository:
 
-## Environment
+[LM2500 Marine Gas Turbine Analytics Notebook](LM2500_Marine_Gas_Turbine_Analytics%20copy.ipynb)
 
-Python 3 with:
+The notebook contains the original analysis workflow. Independent clean-runtime execution remains to be verified.
 
-- NumPy
+## Dataset
+
+Source: NASA Prognostics Center of Excellence, C-MAPSS FD001.
+
+Expected training dataset:
+- 100 simulated engines
+- 20,631 observations
+- 21 sensor channels
+- 3 operating settings
+
+Obtain the NASA C-MAPSS dataset and extract the FD001 files, including train_FD001.txt. If the notebook requests RUL_FD001.txt or other dataset files, provide those as well.
+
+The source dataset is not included in this repository.
+
+## Software Requirements
+
+Python 3 and the packages listed in requirements.txt:
+
+- numpy
 - pandas
 - scikit-learn
-- Matplotlib
+- matplotlib
 - Pillow
-- ReportLab
+- reportlab
 - joblib
-- SQLite (Python standard library)
+
+SQLite is available through Python's standard library.
 
 Install dependencies:
 
@@ -34,59 +50,75 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
+## Google Colab Execution Instructions
+
+1. Open the original notebook in Google Colab.
+2. Start a fresh runtime.
+3. Install the dependencies.
+4. Upload or mount the NASA C-MAPSS FD001 dataset.
+5. Inspect the notebook's input paths and update them to match the dataset location.
+6. Select Runtime > Run all.
+7. Confirm that all code cells execute without errors.
+8. Compare the generated results with the published README and SQL validation report.
+9. Record any discrepancies before declaring the project reproducible.
+
 ## Analysis Workflow
 
-1. Obtain NASA C-MAPSS FD001 data.
-2. Load and validate engine observations.
-3. Analyze operating-life variability.
-4. Examine sensor degradation trends.
-5. Compare selected engine histories.
-6. Train and validate the RUL model.
-7. Execute SQLite engineering queries.
-8. Generate engineering dashboards.
-9. Document findings and risks.
-10. Prepare final portfolio reports.
+1. Dataset acquisition and validation.
+2. Google Colab environment preparation.
+3. Data cleaning and integrity checks.
+4. Exploratory fleet analysis.
+5. Twin-engine comparison.
+6. Predictive maintenance modeling.
+7. SQL engineering analysis.
+8. Engineering dashboard development.
+9. Engineering risk assessment and recommendations.
+10. Executive reporting and publication.
 
-## Validation Design
+## Reported Model Validation
 
-The Random Forest model uses engine-level
-train/validation separation.
+The project reports an engine-level training and validation split:
 
-Training engines: 80
-Held-out validation engines: 20
+- Training engines: 80
+- Held-out validation engines: 20
+- Validation observations: 4,070
 
-Reported held-out validation results:
+Reported results:
 
-- MAE: 25.71 cycles
-- RMSE: 35.20 cycles
-- R-squared: 0.7126
+| Metric | Value |
+|---|---:|
+| Mean absolute error | 25.71 cycles |
+| Root mean squared error | 35.20 cycles |
+| R-squared | 0.7126 |
+| Mean signed error | +2.37 cycles |
+| Near-failure RUL overestimation | 75.16% |
 
-Near-failure overestimation: 75.16%.
+These are previously reported results, not independently reproduced values.
 
-The selected twin-engine prediction examples
-were generated in-sample and must not be
-presented as independent validation results.
+The twin-engine prediction examples were generated in-sample and must not be represented as independent validation results.
 
-## Reproduction Status
+## Verification Checklist
 
-The final repository must include the actual
-analysis notebook or Python source scripts
-before claiming end-to-end reproducibility.
+- [x] Original analysis notebook included
+- [x] Python dependency manifest included
+- [x] SQL analysis scripts included
+- [x] Engineering dashboards included
+- [x] Executive report included
+- [ ] Fresh-runtime notebook execution verified
+- [ ] Input file paths independently validated
+- [ ] Published model metrics independently reproduced
+- [ ] Exact dependency versions and random seeds recorded
 
-A dependency list and workflow description
-alone are not sufficient to reproduce results.
+## Engineering Limitations
 
-Exact package versions, dataset access,
-random seeds, and execution order should
-be documented and verified against the
-original analysis environment.
+The NASA FD001 dataset represents simulated aircraft turbofan degradation, not operational GE LM2500 marine gas turbines.
 
-## Safety Boundary
+No operational maintenance thresholds, inspection intervals, or safety-critical decisions have been validated.
 
-This project is educational.
+Model predictions should not be used for real equipment maintenance decisions.
 
-It does not contain actual LM2500 operational
-measurements or approved maintenance thresholds.
+## Publication Status
 
-No generated predictions should be used to
-make real equipment maintenance decisions.
+Portfolio documentation and source code are available.
+
+Final end-to-end reproducibility verification remains pending.
