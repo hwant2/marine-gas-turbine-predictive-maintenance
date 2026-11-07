@@ -10,11 +10,24 @@ The project does not contain actual GE LM2500 operational data and is not an app
 
 ## Source Code
 
-The original Google Colab notebook is included in this repository:
+## Source Code
 
-[LM2500 Marine Gas Turbine Analytics Notebook](LM2500_Marine_Gas_Turbine_Analytics.ipynb)
+The primary validated notebook is:
 
-The notebook contains the original analysis workflow. Independent clean-runtime execution remains to be verified.
+[LM2500 Marine Gas Turbine Engineering Only](LM2500_Marine_Gas_Turbine_Engineering_Only.ipynb)
+
+The original development notebook is retained for historical reference:
+
+[LM2500 Marine Gas Turbine Analytics](LM2500_Marine_Gas_Turbine_Analytics.ipynb)
+
+The Engineering Only notebook was executed successfully in a fresh Google Colab runtime during project validation.
+
+- Executable code cells verified: 50
+- Notebook included in final portfolio ZIP: PASS
+- ZIP integrity verification: PASS
+- Source-code verification: PASS
+
+Independent reproduction on another machine and exact dependency version verification remain future work.
 
 ## Dataset
 
