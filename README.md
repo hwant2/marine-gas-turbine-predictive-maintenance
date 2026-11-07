@@ -226,7 +226,7 @@ Commercial Modular Aero-Propulsion System Simulation
 
 The original analysis notebook, dependency manifest, engineering dashboards, SQL scripts, executive report, and engineering recommendations are included in this repository.
 
-- [Original Google Colab Notebook](LM2500_Marine_Gas_Turbine_Analytics%20copy.ipynb)
+- [Original Google Colab Notebook](LM2500_Marine_Gas_Turbine_Analytics.ipynb)
 - [Reproducibility Guide](REPRODUCIBILITY.md)
 - [Python Dependencies](requirements.txt)
 - [SQL Validation Report](sql_validation_report.md)
