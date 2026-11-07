@@ -1,0 +1,7 @@
+Phase,Stage,Requirement,Exit_Criterion
+1,Data Qualification,"Obtain representative operational data with documented sensor definitions, failure labels, and equipment history.",Qualified engineers approve data provenance and intended analytical use.
+2,Sensor and Feature Validation,"Validate sensor calibration, missing-data handling, feature engineering, and operating-condition normalization.",Documented data-quality tests and repeatable feature-generation results.
+3,Independent Model Evaluation,"Test unseen engine histories, prediction bias, uncertainty calibration, and failure-stage performance.",Predefined performance and safety-related acceptance criteria are satisfied.
+4,Engineering Review,"Evaluate model limitations, proposed alert rules, failure consequences, and approved maintenance procedures.",Qualified engineering and maintenance stakeholders approve the proposed scope.
+5,Advisory Pilot,Run a monitored shadow-mode pilot without changing actual maintenance decisions or approved intervals.,"Pilot performance, false alarms, missed detections, and drift are reviewed."
+6,Operational Authorization,"Complete applicable safety, cybersecurity, configuration, training, and maintenance approval processes.",Formal authorization is documented before any operational integration.
